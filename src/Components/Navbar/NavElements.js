@@ -14,10 +14,11 @@ export const NavbarContainer = styled.nav`
     box-shadow: -5px -1px 10px rgb(0, 0, 0, .19);
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(LinkR)`
     color: #000;
     margin: 0 1rem;
     font-weight: 600;
+    text-decoration: none;
 `;
 
 export const NavLinks = styled.ul`
@@ -32,7 +33,7 @@ export const NavLinks = styled.ul`
     }
 `;
 
-export const NavItem = styled(LinkR)`
+export const NavItem = styled(LinkS)`
     padding: 0 1rem;
     text-decoration: none;
     color: #000;
@@ -59,7 +60,7 @@ export const NavBtn = styled.button`
     }
 `;
 
-export const NavBtnLink = styled(LinkS)`
+export const NavBtnLink = styled(LinkR)`
     text-decoration: none;
     color: inherit;
 `;

@@ -1,12 +1,20 @@
 import React from 'react';
-import { NavbarContainer, NavLogo, NavLinks, NavItem, NavBtn, NavBtnLink, MobileIcon } from './NavElements';
+import { 
+    NavbarContainer, 
+    NavLogo, 
+    NavLinks, 
+    NavItem, 
+    NavBtn, 
+    NavBtnLink, 
+    MobileIcon 
+    } from './NavElements';
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
         <>
             <NavbarContainer>
-                <NavLogo>
+                <NavLogo to="/">
                     <h1 title="logo">Finch</h1>
                 </NavLogo>
                 <NavLinks>
