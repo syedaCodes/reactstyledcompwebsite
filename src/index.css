@@ -15,3 +15,12 @@ body{
     color: #000;
     font-weight: 400;
 }
+.hero__title{
+    font-size: 4.8rem;
+}
+.hero__title, .hero__p, .btnWrapper{
+    padding: 1rem;
+}
+.btnWrapper{
+    margin: 2rem auto;
+}
