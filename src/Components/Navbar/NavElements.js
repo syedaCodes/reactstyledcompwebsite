@@ -47,8 +47,9 @@ export const NavItem = styled(LinkS)`
     border-bottom: 2px solid #fff;
     
     &:hover{
-        border-bottom: 2px solid #ffbb00;
-        transition: 0.2s ease-in-out;
+        background: #ffbb00;
+        transform: rotate(-7deg) scale(1.1);
+        transition: all .1s ease-in-out;
     }
 `;
 

@@ -21,10 +21,10 @@ const Navbar = ({ toggle }) => {
                     <NavItem to="about">About</NavItem>
                     <NavItem to="discover">Discover</NavItem>
                     <NavItem to="services">Services</NavItem>
-                    <NavItem to="signin">Sign In</NavItem>
+                    <NavItem to="signup">Sign Up</NavItem>
                 </NavLinks>
                 <NavBtn>
-                    <NavBtnLink to="/signup">Sign Up</NavBtnLink>
+                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
                 </NavBtn>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
