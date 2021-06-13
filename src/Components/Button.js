@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkS} from 'react-scroll';
 
 export const Button = styled(LinkS)`
-    color: inherit;
+    color: ${({ primary }) => (primary? '#ffffff': '#000000')};
     padding: 1rem;
     border-bottom: 2px solid #ffbb00;
     outline: none;
@@ -13,7 +13,7 @@ export const Button = styled(LinkS)`
     display: inline-block;
 
     &:hover{
-        background: ${({ lightBg }) => (lightBg? '#000000': '#ffbb00')};
+        background: #ffbb00;
         color: #000000;
         border-bottom: 2px solid #000000;
     }

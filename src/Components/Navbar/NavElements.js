@@ -3,7 +3,8 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const NavbarContainer = styled.nav`
-    position: relative;
+    position: sticky;
+    top: 0;
     background: #fff;
     width: 100%;
     height: 100%;
