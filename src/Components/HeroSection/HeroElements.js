@@ -3,10 +3,15 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
     width: 100%;
-    height: 59rem;
-    padding: 2rem;
+    min-height: 66rem;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: center;
+    // margin: 4rem auto;
+
+    @media screen and (max-width: 48em){
+        height: 100%;
+    }
 `;
 
 export const HeroContent = styled.div`

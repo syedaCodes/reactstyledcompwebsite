@@ -11,10 +11,17 @@ import {
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = ({ toggle }) => {
+
+    // const [ scrollNav, setScrollNav ] = useState(false);
+
+    // const changeNav = () => window.scrollY >= 80? setScrollNav(true):setScrollNav(false);
+
+    // useEffect(() => { window.addEventListener('scroll', changeNav)}, []); scrollNav={scrollNav} { useState, useEffect }
+
     return (
         <>
             <NavbarContainer>
-                <NavLogo to="/">
+                <NavLogo to="home">
                     <h1 title="logo">Finch</h1>
                 </NavLogo>
                 <NavLinks>
