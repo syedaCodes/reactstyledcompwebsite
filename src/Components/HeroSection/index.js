@@ -22,7 +22,13 @@ const HeroSection = () => {
                     <h1 className="hero__title">An Artificial Intelligence Program</h1>
                     <p className="hero__p">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                     <div className="btnWrapper">
-                        <Button to="signup" onMouseEnter={btnHover} onMouseLeave={btnHover}>
+                        <Button to="signup"
+                        onMouseEnter={btnHover}
+                        onMouseLeave={btnHover}
+                        smooth={true}
+                        duration={true}
+                        spy={true} 
+                        exact='true'>
                             Get Started {hover? <ArrowForward />: <ArrowRight />}
                         </Button>
                     </div>

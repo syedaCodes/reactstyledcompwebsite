@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
     FooterContainer, 
     FooterWrapper,
@@ -9,6 +10,7 @@ import {
     SocialMediaIcons,
     SocialIconLink,
     WebsiteRights,
+    NoteDev,
     Dev
 } from './FooterElements';
 import { FaFacebook, FaInstagram, FaYoutube, FaCodepen, FaGithub, FaHeart } from 'react-icons/fa';
@@ -16,6 +18,11 @@ import LinksBox from './LinksBox';
 import { dataLinksOne, dataLinksTwo, dataLinksThree, dataLinksFour } from './DataFooter';
 
 const Footer = () => { 
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
             <FooterContainer>
@@ -29,8 +36,8 @@ const Footer = () => {
                         </FooterLinks>
                     </FooterLinksBox>
                     <SocialMedia>
-                        <SocialLogo to="/">Finch</SocialLogo>
-                            <WebsiteRights>Finch &copy; {new Date().getFullYear()} All rights reserved. Developed with <FaHeart style={{ color: 'red'}}/> by <Dev>ncodes</Dev></WebsiteRights>
+                        <SocialLogo to="/" onClick={toggleHome}>Finch</SocialLogo>
+                            <WebsiteRights>Finch &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialMediaIcons>
                                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                                     <FaFacebook />
@@ -48,6 +55,7 @@ const Footer = () => {
                                     <FaGithub />
                             </SocialIconLink>
                         </SocialMediaIcons>
+                        <NoteDev>Developed with <FaHeart style={{ color: 'red'}}/> by <Dev>ncodes</Dev></NoteDev>
                     </SocialMedia>
                 </FooterWrapper>
             </FooterContainer>

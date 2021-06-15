@@ -105,6 +105,11 @@ export const SocialIconLink = styled.a`
 
 `;
 
+export const NoteDev = styled.p`
+    padding: 1rem;
+    font-size: 1.3rem;
+`;
+
 export const Dev = styled.a`
     color: #ffbb00;
     text-decoration: none;

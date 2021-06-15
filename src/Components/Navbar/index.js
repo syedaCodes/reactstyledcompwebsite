@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { 
     NavbarContainer, 
     NavLogo, 
@@ -18,17 +19,41 @@ const Navbar = ({ toggle }) => {
 
     // useEffect(() => { window.addEventListener('scroll', changeNav)}, []); scrollNav={scrollNav} { useState, useEffect }
 
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
             <NavbarContainer>
-                <NavLogo to="home">
+                <NavLogo to="/" onClick={toggleHome}>
                     <h1 title="logo">Finch</h1>
                 </NavLogo>
                 <NavLinks>
-                    <NavItem to="about">About</NavItem>
-                    <NavItem to="discover">Discover</NavItem>
-                    <NavItem to="services">Services</NavItem>
-                    <NavItem to="signup">Sign Up</NavItem>
+                    <NavItem to="about"
+                    smooth={true}
+                    duration={true}
+                    spy={true} 
+                    exact='true'
+                    activeClass="active">About</NavItem>
+                    <NavItem to="discover"
+                    smooth={true}
+                    duration={true}
+                    spy={true} 
+                    exact='true'
+                    activeClass="active">Discover</NavItem>
+                    <NavItem to="services"
+                    smooth={true}
+                    duration={true}
+                    spy={true} 
+                    exact='true'
+                    activeClass="active">Services</NavItem>
+                    <NavItem to="signup"
+                    smooth={true}
+                    duration={true}
+                    spy={true} 
+                    exact='true'
+                    activeClass="active">Sign Up</NavItem>
                 </NavLinks>
                 <NavBtn>
                     <NavBtnLink to="/signin">Sign In</NavBtnLink>

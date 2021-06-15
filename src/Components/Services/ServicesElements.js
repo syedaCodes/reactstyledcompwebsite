@@ -29,7 +29,7 @@ export const ServicesWrapper = styled.div`
 
 export const ServiceCard = styled.div`
     padding: 2rem;
-    height: 40rem;
+    max-height: 40rem;
     margin: 0 1.5rem;
     border: 1px solid #e7e7e7;
     background: linear-gradient(157deg, #e7e7e7 0% 40%, #ffbb00 75% 100%);

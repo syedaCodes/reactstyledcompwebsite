@@ -20,7 +20,7 @@ export const NavbarContainer = styled.nav`
     }
 `;
 
-export const NavLogo = styled(LinkS)`
+export const NavLogo = styled(LinkR)`
     color: #000;
     margin: 0 1rem;
     font-weight: 600;
@@ -42,6 +42,7 @@ export const NavLinks = styled.ul`
 
 export const NavItem = styled(LinkS)`
     padding: 0 1rem;
+    height: 100%;
     text-decoration: none;
     color: #000;
     margin: 0 .5rem;
@@ -50,6 +51,10 @@ export const NavItem = styled(LinkS)`
         background: #ffbb00;
         transform: rotate(-7deg) scale(1.1);
         transition: all .1s ease-in-out;
+    }
+
+    &.active{
+        border-bottom: 1px solid #ffbb00;
     }
 `;
 
