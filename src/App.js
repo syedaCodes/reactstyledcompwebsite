@@ -6,7 +6,7 @@ import Signin from './Pages/Signin';
 const App = () => {
 
     return (
-        <Router>
+        <Router basename="/finch">
             <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/signin" component={Signin} exact />
