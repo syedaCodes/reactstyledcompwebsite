@@ -22,18 +22,22 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLinks>
                         <SidebarItem to="about"
                         smooth={true}
+                        duration={true}
                         spy={true} 
                         exact='true' onClick={toggle}>About</SidebarItem>
                         <SidebarItem to="discover"
                         smooth={true}
+                        duration={true}
                         spy={true} 
                         exact='true' onClick={toggle}>Discover</SidebarItem>
                         <SidebarItem to="services"
                         smooth={true}
+                        duration={true}
                         spy={true} 
                         exact='true' onClick={toggle}>Services</SidebarItem>
                         <SidebarItem to="signup"
                         smooth={true}
+                        duration={true}
                         spy={true} 
                         exact='true' onClick={toggle}>Sign Up</SidebarItem>
                     </SidebarLinks>

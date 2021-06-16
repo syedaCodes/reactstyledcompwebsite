@@ -45,7 +45,8 @@ export const ServiceCard = styled.div`
     }
 
     @media screen and (max-width: 48em){
-        width: 70%;
+        min-width: 20rem;
+        width: 100%;
         margin: 1rem auto;
     }
 `;
