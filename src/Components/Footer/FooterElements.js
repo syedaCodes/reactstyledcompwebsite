@@ -17,7 +17,7 @@ export const FooterLinksBox = styled.div`
 
     @media screen and (max-width: 48em){
         width: 100%;
-        padding: 2rem;
+        padding: 1rem;
     }
 `;
 
