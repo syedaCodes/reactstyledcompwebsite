@@ -82,7 +82,6 @@ export const Subtitle = styled.p`
     margin: 1rem 0;
     font-size: 1.8rem;
     color: ${({darkText}) => (darkText? '#000000': '#ffffff')};
-    text-align: justify;
 `;
 
 export const BtnWrap = styled.div`
