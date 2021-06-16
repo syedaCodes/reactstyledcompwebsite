@@ -8,10 +8,10 @@ import './index.css';
 const App = () => {
 
     return (
-        <Router basename="/finch">
+        <Router>
             <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/signin" component={Signin} exact />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/signin" component={Signin} />
             </Switch>
         </Router>
     )
