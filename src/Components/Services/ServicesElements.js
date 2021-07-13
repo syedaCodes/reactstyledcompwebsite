@@ -29,7 +29,7 @@ export const ServicesWrapper = styled.div`
 
 export const ServiceCard = styled.div`
     padding: 2rem;
-    max-height: 40rem;
+    max-height: 100%;
     min-width: 30rem;
     margin: 0 1.5rem;
     border: 1px solid #e7e7e7;
@@ -40,7 +40,6 @@ export const ServiceCard = styled.div`
     text-align: center;
     
     &:hover{
-        transform: scale(1.02);
         box-shadow: 5px -5px 10px rgba(0, 0, 0, .3);
     }
 

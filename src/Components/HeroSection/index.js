@@ -20,7 +20,7 @@ const HeroSection = () => {
             <HeroContainer id="home">
                 <HeroContent>
                     <h1 className="hero__title">An Artificial Intelligence Program</h1>
-                    <p className="hero__p">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                    <p className="hero__p">"AI software solutions to create a sustainable and cohesive AI-driven ecosystem for startups, small-midsize businesses, and enterprise-wide businesses."</p>
                     <div className="btnWrapper">
                         <Button to="signup"
                         onMouseEnter={btnHover}
